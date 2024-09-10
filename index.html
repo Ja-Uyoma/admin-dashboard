@@ -7,39 +7,40 @@
     <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
-    <header>
-      <div>
-        <form action="/search" method="post">
-          <label for="search-bar">
-            Search
-            <input type="search" name="search-bar" id="search-bar" />
-          </label>
-        </form>
+    <main>
+      <header>
+        <div>
+          <form action="/search" method="post">
+            <label for="search-bar">
+              Search
+              <input type="search" name="search-bar" id="search-bar" />
+            </label>
+          </form>
+
+          <div>
+            <span>Notifications</span>
+            <span>Profile picture</span>
+            <span>Morgan Oakley</span>
+          </div>
+        </div>
 
         <div>
-          <span>Notifications</span>
           <span>Profile picture</span>
-          <span>Morgan Oakley</span>
+          <p>
+            Hi there, <br />
+            Morgan Oakley (@morgan)
+          </p>
+
+          <nav>
+            <ul>
+              <li><button type="submit">New</button></li>
+              <li><button type="submit">Upload</button></li>
+              <li><button type="submit">Share</button></li>
+            </ul>
+          </nav>
         </div>
-      </div>
+      </header>
 
-      <div>
-        <span>Profile picture</span>
-        <p>
-          Hi there, <br />
-          Morgan Oakley (@morgan)
-        </p>
-
-        <nav>
-          <ul>
-            <li><button type="submit">New</button></li>
-            <li><button type="submit">Upload</button></li>
-            <li><button type="submit">Share</button></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-    <main>
       <aside>
         <h2>Dashboard</h2>
 
