@@ -3,6 +3,9 @@ export default {
   content: ["./index.html", "./src/main.ts"],
   theme: {
     extend: {
+      backgroundImage: {
+        dashboard: "url('/view-dashboard.svg')",
+      },
       listStyleImage: {
         home: "url('/home.svg')",
         profile: "url('/face-man-profile.svg')",
