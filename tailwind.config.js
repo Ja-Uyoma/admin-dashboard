@@ -8,8 +8,7 @@ export default {
         notifications: "url('/bell-ring.svg')",
         search: "url('/magnify.svg')",
         profile: "url('/face-man-profile.svg')",
-      },
-      listStyleImage: {
+
         home: "url('/home.svg')",
         profile: "url('/face-man-profile.svg')",
         messages: "url('/message-reply.svg')",
