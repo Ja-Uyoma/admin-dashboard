@@ -5,7 +5,7 @@ export default {
     extend: {
       backgroundImage: {
         dashboard: "url('/view-dashboard.svg')",
-        notifications: "url('/notifications_active.svg')",
+        notifications: "url('/bell-ring.svg')",
         search: "url('/magnify.svg')",
       },
       listStyleImage: {
