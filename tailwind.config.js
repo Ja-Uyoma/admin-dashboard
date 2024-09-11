@@ -6,6 +6,7 @@ export default {
       backgroundImage: {
         dashboard: "url('/view-dashboard.svg')",
         notifications: "url('/notifications_active.svg')",
+        search: "url('/magnify.svg')",
       },
       listStyleImage: {
         home: "url('/home.svg')",
