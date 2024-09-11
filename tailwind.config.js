@@ -7,6 +7,7 @@ export default {
         dashboard: "url('/view-dashboard.svg')",
         notifications: "url('/bell-ring.svg')",
         search: "url('/magnify.svg')",
+        profile: "url('/face-man-profile.svg')",
       },
       listStyleImage: {
         home: "url('/home.svg')",
