@@ -6,8 +6,10 @@
     <title>Admin Dashboard</title>
     <link rel="stylesheet" href="src/style.css" />
   </head>
-  <body class="grid grid-cols-[1fr,3fr]">
-    <aside class="flex flex-col gap-4 bg-sky-500 text-white text-center">
+  <body class="grid grid-cols-5">
+    <aside
+      class="col-span-1 flex flex-col gap-4 bg-sky-500 text-white text-center"
+    >
       <h2 class="py-3 text-2xl font-medium">
         <span class="bg-dashboard bg-no-repeat px-5"></span>
         Dashboard
@@ -60,7 +62,7 @@
       </nav>
     </aside>
 
-    <div>
+    <div class="col-span-4">
       <header class="bg-white px-8 py-2">
         <div class="flex py-6 items-center">
           <form action="/search" method="get" class="basis-2/3">
