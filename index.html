@@ -66,18 +66,22 @@
     <div class="col-span-4">
       <header class="bg-white px-8 py-2">
         <div class="flex py-6 items-center">
-          <form action="/search" method="get" class="basis-2/3">
-            <label for="search-bar">
-              <span
-                class="bg-search bg-no-repeat px-4 hover:cursor-pointer"
-              ></span>
-              <input
-                type="search"
-                name="search-bar"
-                id="search-bar"
-                class="border bg-slate-200 rounded-xl w-4/5"
-              />
+          <form
+            action="/search"
+            method="get"
+            class="basis-2/3 flex items-center gap-3"
+          >
+            <label
+              for="search-bar"
+              class="bg-search bg-no-repeat hover:cursor-pointer inline-block size-6"
+            >
             </label>
+            <input
+              type="search"
+              name="search-bar"
+              id="search-bar"
+              class="border bg-slate-200 rounded-xl w-4/5"
+            />
           </form>
 
           <div class="basis-1/3">
