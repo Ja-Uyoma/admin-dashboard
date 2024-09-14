@@ -18,6 +18,10 @@ export default {
         settings: "url('/cog.svg')",
         support: "url('/help-box.svg')",
         privacy: "url('/shield-check.svg')",
+
+        eye: "url('/eye-plus-outline.svg')",
+        fork: "url('/source-fork.svg')",
+        star: "url('/star-plus-outline.svg')",
       },
     },
   },
