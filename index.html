@@ -5,37 +5,284 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Admin Dashboard</title>
     <link rel="stylesheet" href="src/style.css" />
+    <link rel="shortcut icon" href="/view-dashboard.svg" type="x-icon" />
   </head>
-  <body>
-    <main>
-      <aside>
-        <h2>Dashboard</h2>
+  <body class="grid grid-cols-5">
+    <aside
+      class="col-span-1 flex flex-col gap-4 bg-sky-500 text-white text-center"
+    >
+      <h2 class="py-3 text-2xl font-medium">
+        <span class="bg-dashboard bg-no-repeat px-5"></span>
+        Dashboard
+      </h2>
 
-        <div>
+      <nav>
+        <ul class="text-xl font-medium">
+          <li class="my-3">
+            <span class="bg-home bg-no-repeat px-4"></span>
+            <a href="/home">Home</a>
+          </li>
+          <li class="my-3">
+            <span class="bg-profile bg-no-repeat px-4"></span>
+            <a href="/profile">Profile</a>
+          </li>
+          <li class="my-3">
+            <span class="bg-messages bg-no-repeat px-4"></span>
+            <a href="/messages">Messages</a>
+          </li>
+          <li class="my-3">
+            <span class="bg-history bg-no-repeat px-4"></span>
+            <a href="/history">History</a>
+          </li>
+          <li class="my-3">
+            <span class="bg-tasks bg-no-repeat px-4"></span>
+            <a href="/tasks">Tasks</a>
+          </li>
+          <li class="my-3">
+            <span class="bg-communities bg-no-repeat px-4"></span>
+            <a href="/communities">Communities</a>
+          </li>
+        </ul>
+      </nav>
+
+      <nav>
+        <ul class="text-xl font-medium">
+          <li class="my-3">
+            <span class="bg-settings bg-no-repeat px-4"></span>
+            <a href="/settings">Settings</a>
+          </li>
+          <li class="my-3">
+            <span class="bg-support bg-no-repeat px-4"></span>
+            <a href="/support">Support</a>
+          </li>
+          <li class="my-3">
+            <span class="bg-privacy bg-no-repeat px-4"></span>
+            <a href="/privacy">Privacy</a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+
+    <div class="col-span-4">
+      <header class="bg-white px-8 py-2">
+        <div class="flex py-6 items-center">
+          <form action="/search" method="get" class="basis-2/3">
+            <label for="search-bar">
+              <span
+                class="bg-search bg-no-repeat px-4 hover:cursor-pointer"
+              ></span>
+              <input
+                type="search"
+                name="search-bar"
+                id="search-bar"
+                class="border bg-slate-200 rounded-xl w-4/5"
+              />
+            </label>
+          </form>
+
+          <div class="basis-1/3">
+            <span class="bg-notifications bg-no-repeat px-4"></span>
+            <span class="bg-profile bg-no-repeat px-4"></span>
+            <span class="font-medium text-lg">Jimmy Givans</span>
+          </div>
+        </div>
+
+        <div class="flex justify-between items-center">
+          <div class="flex gap-3 items-center">
+            <span class="bg-profile bg-no-repeat bg-auto px-4 w-20 h-20"></span>
+            <p class="whitespace-pre-line">
+              <span class="font-medium text-gray-600 text-sm">Hi there,</span>
+              <span class="font-bold text-xl">Jimmy Givans (@jgivans)</span>
+            </p>
+          </div>
+
           <nav>
-            <ul>
-              <li><a href="/home">Home</a></li>
-              <li><a href="/profile">Profile</a></li>
-              <li><a href="/messages">Messages</a></li>
-              <li><a href="/history">History</a></li>
-              <li><a href="/tasks">Tasks</a></li>
-              <li><a href="/communities">Communities</a></li>
+            <ul class="flex gap-5">
+              <li>
+                <button
+                  type="submit"
+                  class="text-white bg-sky-600 font-medium rounded-2xl px-6 py-1"
+                >
+                  New
+                </button>
+              </li>
+              <li>
+                <button
+                  type="submit"
+                  class="text-white bg-sky-600 font-medium rounded-2xl px-6 py-1"
+                >
+                  Upload
+                </button>
+              </li>
+              <li>
+                <button
+                  type="submit"
+                  class="text-white bg-sky-600 font-medium rounded-2xl px-6 py-1"
+                >
+                  Share
+                </button>
+              </li>
             </ul>
           </nav>
         </div>
+      </header>
 
-        <div>
-          <nav>
-            <ul>
-              <li><a href="/settings">Settings</a></li>
-              <li><a href="/support">Support</a></li>
-              <li><a href="/privacy">Privacy</a></li>
-            </ul>
-          </nav>
+      <main class="bg-gray-300 px-6 pt-6">
+        <div class="grid grid-cols-4 gap-4">
+          <section class="col-span-3">
+            <h2 class="font-semibold text-xl text-gray-900 py-2">
+              Your Projects
+            </h2>
+
+            <div class="grid grid-cols-2 grid-rows-3 gap-6">
+              <article
+                class="bg-white rounded-lg border-l-8 border-l-amber-400 pt-4 pb-16 pl-4 pr-8"
+              >
+                <h3 class="font-semibold text-lg text-gray-900">
+                  First Project
+                </h3>
+                <p>Something interesting about my first project</p>
+              </article>
+
+              <article
+                class="bg-white rounded-lg border-l-8 border-l-amber-400 pt-4 pb-16 pl-4 pr-8"
+              >
+                <h3 class="font-semibold text-lg text-gray-900">
+                  Second Project
+                </h3>
+                <p>Something interesting about my second project</p>
+              </article>
+
+              <article
+                class="bg-white rounded-lg border-l-8 border-l-amber-400 pt-4 pb-16 pl-4 pr-8"
+              >
+                <h3 class="font-semibold text-lg text-gray-900">
+                  Third Project
+                </h3>
+                <p>Something interesting about my third project</p>
+              </article>
+
+              <article
+                class="bg-white rounded-lg border-l-8 border-l-amber-400 pt-4 pb-16 pl-4 pr-8"
+              >
+                <h3 class="font-semibold text-lg text-gray-900">
+                  Fourth Project
+                </h3>
+                <p>Something interesting about my fourth project</p>
+              </article>
+
+              <article
+                class="bg-white rounded-lg border-l-8 border-l-amber-400 pt-4 pb-16 pl-4 pr-8"
+              >
+                <h3 class="font-semibold text-lg text-gray-900">
+                  Fifth Project
+                </h3>
+                <p>Something interesting about my fifth project</p>
+              </article>
+
+              <article
+                class="bg-white rounded-lg border-l-8 border-l-amber-400 pt-4 pb-16 pl-4 pr-8"
+              >
+                <h3 class="font-semibold text-lg text-gray-900">
+                  Sixth Project
+                </h3>
+                <p>Something interesting about my sixth project</p>
+              </article>
+            </div>
+          </section>
+
+          <aside class="col-span-1 flex flex-col gap-5 text-wrap">
+            <section>
+              <h2 class="font-semibold text-xl text-gray-900 py-2">
+                Announcements
+              </h2>
+
+              <div class="bg-white rounded-lg text-xs p-6">
+                <article class="border-b border-gray-400 pb-3">
+                  <h3 class="font-semibold text-lg text-gray-900">
+                    Site Maintenance
+                  </h3>
+                  <p class="text-gray-500">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Maiores maxime quam iure inventore distinctio impedit
+                    reiciendis aliquam eius neque in, ipsam ab? Exercitationem
+                    iste magni porro aspernatur. Dignissimos, dolorum totam?
+                  </p>
+                </article>
+
+                <article class="border-b border-gray-400 py-3">
+                  <h3 class="font-semibold text-lg text-gray-900">
+                    Community Share Day
+                  </h3>
+                  <p class="text-gray-500">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Autem praesentium itaque aliquam quo, earum nesciunt, unde
+                    hic deserunt consequuntur adipisci eos numquam tempore quos
+                    molestiae nemo? Facilis libero esse praesentium.
+                  </p>
+                </article>
+
+                <article class="pt-3">
+                  <h3 class="font-semibold text-lg text-gray-900">
+                    Updated Privacy Policy
+                  </h3>
+                  <p class="text-gray-500">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quo, quasi provident? Voluptas ipsam quia eos, deleniti enim
+                    voluptates odit! Est deleniti deserunt nesciunt quaerat
+                    corrupti dolorem, veritatis eius possimus ipsum!
+                  </p>
+                </article>
+              </div>
+            </section>
+
+            <section>
+              <h2 class="font-semibold text-xl text-gray-900 py-2">Trending</h2>
+              <nav class="bg-white rounded-lg p-4">
+                <ul>
+                  <li class="flex items-center gap-2">
+                    <span
+                      class="bg-profile bg-no-repeat bg-contain inline-block size-12"
+                    ></span>
+                    <span class="whitespace-pre-line text-sm">
+                      <a href="/tegan">@tegan</a>
+                      <span class="text-slate-500">World Peace Builder</span>
+                    </span>
+                  </li>
+                  <li class="flex items-center gap-2">
+                    <span
+                      class="bg-profile bg-no-repeat bg-contain inline-block size-12"
+                    ></span>
+                    <span class="whitespace-pre-line text-sm">
+                      <a href="/morgan">@morgan</a>
+                      <span class="text-slate-500">Super Cool Project</span>
+                    </span>
+                  </li>
+                  <li class="flex items-center gap-2">
+                    <span
+                      class="bg-profile bg-no-repeat bg-contain inline-block size-12"
+                    ></span>
+                    <span class="whitespace-pre-line text-sm">
+                      <a href="/kendall">@kendall</a>
+                      <span class="text-slate-500">Life Changing App</span>
+                    </span>
+                  </li>
+                  <li class="flex items-center gap-2">
+                    <span
+                      class="bg-profile bg-no-repeat bg-contain inline-block size-12"
+                    ></span>
+                    <span class="whitespace-pre-line text-sm">
+                      <a href="/alex">@alex</a>
+                      <span class="text-slate-500">No Traffic Maker</span>
+                    </span>
+                  </li>
+                </ul>
+              </nav>
+            </section>
+          </aside>
         </div>
-      </aside>
-    </main>
-
+      </main>
+    </div>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
