@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        dashboard: "url('/view-dashboard.svg')",
+        dashboard: "url('/dashboard.svg')",
         notifications: "url('/bell-ring.svg')",
         search: "url('/magnify.svg')",
         profile: "url('/face-man-profile.svg')",
